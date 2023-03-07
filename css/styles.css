@@ -170,10 +170,10 @@ input {
 
 .todo h3{
     flex:1;
-    font-size: 1.9rem;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
+    font-size: 3px;
+    font-size: 4vw;
+    overflow: auto;
+
 }
 
 .todo button {
@@ -189,7 +189,40 @@ input {
     color: #fff;
     text-decoration: line-through;
     font-style: italic;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    overflow: auto;
+    /*text-overflow: ellipsis;*/
+}
+
+/* Media query para celular */
+
+@media screen and (max-width: 420px) {
+
+   .todo h3{
+     
+    top: -60%;
+   }
+    
+
+  /* body{
+    
+  background-color: blue;
+
+  } */
+
+  .todo-container{
+    max-width: 300px;
+    margin: 10rem auto;
+    background-color: #eaeaea;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+  #todo-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
 }
